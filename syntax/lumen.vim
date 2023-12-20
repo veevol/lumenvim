@@ -17,11 +17,11 @@ syntax match lumenInt /0x[0-9A-Fa-f_]\+/ display
 syntax match lumenInt /0o[0-7_]\+/ display
 syntax match lumenInt /0b[01_]\+/ display
 
-syntax match lumenFloat /[+-]\=[1-9][0-9_]*.[0-9_]\+/ display
+syntax match lumenFloat /[+-]\=[1-9][0-9_]*\.[0-9_]\+/ display
 syntax match lumenFloat /[+-]\=0.[0-9_]\+/ display
 
-syntax match lumenFloat /[+-]\=[1-9][0-9_].[0-9_]\+e[0-9_]\+/ display
-syntax match lumenFloat /[+-]\=0.[0-9]\+e[0-9_]\+/ display
+syntax match lumenFloat /[+-]\=[1-9][0-9_]\.[0-9_]\+e[0-9_]\+/ display
+syntax match lumenFloat /[+-]\=0\.[0-9]\+e[0-9_]\+/ display
 
 syntax keyword lumenBool true false
 
